@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*.josefin-slab {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+body{
+    /* background-image: url(./images/sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    height: 100vh;
+    font-family: "Josefin Slab", serif;
+    background-color: #d6d5d5;
+}
+    
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px!important;
+    background-color: #fff!important;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar div img{
+    width: 100px;
+}
+.main_container{
+    width: 100%;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    height: 95vh;
+}
+.main_container .main .right_side{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    color: #000;
+    width: 60%;
+}
+.main_container .main .right_side a{
+    text-decoration: none;
+}
+.main_container .main .right_side a button{
+  display: flex;
+  padding: 10px;
+ gap: 5px;
+  align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.main_container .main .right_side h1{
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; */
+    font-size: 2.5rem;
+    
+}
+.main_container .main .right_side p{
+    font-size: 1.5rem;
+    max-width: 90%;
+    text-align: center;
+    line-height: 2rem;
+}
+.main_container .main .right_side button img{
+    width: 30px;
+}
+.main_container .main .left_side{
+    position: relative;
+    width: 40%;
+    height: 95vh;
+}
+.main_container .main .left_side img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px 10px #e4e3e3;
+}
+.main_container .main .left_side .first{
+ position: absolute;
+ top: 20%;
+ right: 50px;
+
+}
+.second{
+    position: absolute;
+ top: 50%;
+ left: 70px;
+}
+.third{
+    position: absolute;
+    top: 45%;
+    right: 75px;
+}
+.fourth{
+    position: absolute;
+    top: 20%;
+    left: 120px;
+}
