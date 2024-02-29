@@ -4,17 +4,21 @@ var loginHide = document.querySelector('.log_In');
 // function for check email registered or not and password match or not ant go to questions section
 document.querySelector("#logInForm").addEventListener('submit', function logInForm(e) {
     let userData = JSON.parse(localStorage.getItem('userDetails')) ?? [];
+
+    let loggedIn = false; 
+
     userData.forEach(element => {
         if (e.target.email.value == element.userEmail && e.target.password.value == element.userPassword) {
             alert("Successfully Login");
-
+            loggedIn = true;
             loginHide.classList.add('for_display_none')
             questionDiveShow.classList.add('containerForQuiz');
-
-        } else {
-            alert("wrong email or password")
-        }
+        } 
     });
+
+    if (!loggedIn) {
+        alert("wrong email or password");
+    }
 
     e.preventDefault()
 });
