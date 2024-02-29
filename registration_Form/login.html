@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="log_In">
         <p>Welcome To</p>
         <div><img src="../images/smit logo.png" alt=""></div>
-        
+
         <form id="logInForm">
             <label for="email_sign_in">Email:</label>
             <input type="email" id="email_sign_in" name="email" required>
@@ -22,6 +24,36 @@
         </form>
     </div>
 
+    <!--section for Question and answers -->
+    <div class=" for_display_none" id="questionDiveShow" >
+        <h2 class="question">Questions</h2>
+
+        <div class="optionsForQ">
+            <div class="options">
+                <input type="radio" name="option1" id="optionsA" class="optionsCheck"  value="a">
+                <label for="optionsA">option1</label>
+            </div>
+
+            <div class="options">
+                <input type="radio" name="option1" id="optionsB" class="optionsCheck"  value="b">
+                <label for="optionsB">option2</label>
+            </div>
+
+            <div class="options">
+                <input type="radio" name="option1" id="optionsC" class="optionsCheck"  value="c">
+                <label for="optionsC">option1</label>
+            </div>
+
+            <div class="options">
+                <input type="radio" name="option1" id="optionsD" class="optionsCheck" value="d">
+                <label for="optionsD" >option1</label>
+            </div>
+            
+        </div>
+        <button type="submit" class="opt_btn">Submit</button>
+    </div>
+
     <script src="index.js"></script>
 </body>
+
 </html>
