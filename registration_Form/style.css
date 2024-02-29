@@ -26,6 +26,9 @@ form {
     display: flex;
     flex-direction: column;
 }
+form span{
+    margin-top: 1rem;
+}
 
 label {
     margin-bottom: 8px;
